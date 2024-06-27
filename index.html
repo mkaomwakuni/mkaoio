@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Mkao Mwakuni</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Mkao Mwakuni</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="images/pic1.png" alt="Mkao Mwakuni profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Mkao Mwakuni</h1>
+            <p class="section__text__p2">Android Developer | Open Source Contributor</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/mkao_resume.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="images/linkedin.png" alt="LinkedIn profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/mkaomwakuni/'">
+                <img src="images/github.png" alt="GitHub profile" class="icon"
+                    onclick="location.href='https://github.com/mkaomwakuni'">
+                <img src="images/medium.png" alt="Medium profile" class="icon"
+                    onclick="location.href='https://medium.com/@mkaomwakuni'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="images/logo.png" alt="Profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="images/experience.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>Android Development | Open Source Contributor</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="images/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Bachelor of Science in Information Technology <br> KCA University</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Highly motivated Android developer with a passion for open-source contributions. Skilled in Kotlin and Jetpack Compose,
+                        Kotlin, and mobile development frameworks. Also a Medium technical writer focusing on mobile
+                        technologies.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Android Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="images/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>XML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="images/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Android</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="images/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Kotlin</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="images/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Firebase</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="images/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Material UI</h3>
+                                <p>Expert</p>
+                            </div>
+                        </article>
+			 <article>
+                            <img src="images/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Android SDK</h3>
+                                <p>Expert</p>
+                            </div>
+                        </article>
+			 <article>
+                            <img src="images/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Rest Apis</h3>
+                                <p>Expert</p>
+                            </div>
+                        </article>
+			 <article>
+                            <img src="images/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Jetpack Libraries</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Mobile Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="images/p1.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Global News App</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/mkaomwakuni/Weaver-News-App'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='#'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="images/p2.png" alt="Project 2" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">RealEstate App</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/mkaomwakuni/weather-app'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='#'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="images/p3.png" alt="Project 3" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Travel and Hotel Booking App</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/mkaomwakuni/task-manager-app'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='#'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="images/email.png" alt="Email icon" class="icon">
+                <p>Email: mkao@example.com</p>
+            </div>
+         
+    </section>
+    <footer>
+        <p>&copy; 2024 Mkao Mwakuni. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
